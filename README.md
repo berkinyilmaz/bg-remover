@@ -1,16 +1,52 @@
-# React + Vite
+# Background Remover
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Minimal web app to remove image backgrounds instantly.
 
-Currently, two official plugins are available:
+No signup.  
+No noise.  
+Just clean PNGs.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Live Demo
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+👉 https://bg-remover-wheat-eight.vercel.app
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ Features
+
+- Upload an image
+- Remove background instantly
+- Download clean PNG
+- No authentication
+- No ads
+- No watermarks
+
+---
+
+## 🧠 Tech Stack
+
+- React + Vite
+- Vercel Serverless Functions
+- remove.bg API
+- Vanilla CSS (Apple-inspired UI)
+
+---
+
+## 🖥️ How It Works
+
+1. Upload an image
+2. Image is sent to a serverless API
+3. Background is removed using remove.bg
+4. Result is returned as a PNG
+5. Download instantly
+
+---
+
+## 🔐 Environment Variables
+
+Create a `.env` file and add:
+
+```env
+REMOVE_BG_API_KEY=your_remove_bg_api_key
